@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 선택문 </title>
+<script>
+	var penguinne = prompt("어떤 media를 자주 사용하나용?", "");
+	var result;
+	switch(penguinne) {
+		case ("네이버" || "naver") : result = "www.naver.com" ;
+		break;
+		case "google" || "구글" : result = "www.google.com";
+		break;
+		case ("youtube"|| "유투브") : result = "www.youtube.com";
+		break;
+		case ("인스타그램" || "인스타" || "insta" || "instagram") : result = "www.instagram.com";
+		break;
+		case ("facebook" || "페이스북" || "페북") : result = "www.facebook.com";
+		break;
+
+		default: alert("닝겐입니까?")
+	}
+
+	if(result) window.open("http://" + result);
+</script>
+</head>
+<body>
+</body>
+</html>
